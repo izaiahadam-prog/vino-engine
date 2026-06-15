@@ -1,0 +1,32 @@
+{
+  "domains_enabled": [
+    "git_repositories",
+    "wikipedia_revisions",
+    "paper_lineage",
+    "dataset_provenance",
+    "software_symbols"
+  ],
+  "input_paths": {
+    "external_records": "data/external",
+    "pair_candidates": "data/external/continuation_candidates/vino_continuation_candidates.jsonl",
+    "tasks": "data/candidates/continuation_tasks.jsonl"
+  },
+  "output_paths": {
+    "candidate_dir": "data/candidates",
+    "results_dir": "results/external_validation"
+  },
+  "max_records": 1000,
+  "random_seed": 7,
+  "entropy_floor": 0.35,
+  "authorization_threshold": 0.5,
+  "convergence_threshold": 0.2,
+  "scoring_weights": {
+    "recoverability_score": 0.18,
+    "faithful_transfer_score": 0.18,
+    "why_chain_reconstruction": 0.14,
+    "accountable_lineage_score": 0.14,
+    "distortion_reduction_score": 0.12,
+    "successor_viability_score": 0.12,
+    "Sigma_J_convergence": 0.12
+  }
+}
