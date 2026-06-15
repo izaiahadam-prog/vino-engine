@@ -1,0 +1,32 @@
+{
+  "git": [
+    {
+      "local_path": ".",
+      "max_commits": 200
+    }
+  ],
+  "wikipedia": [
+    {
+      "page_title": "Ship of Theseus",
+      "limit": 20
+    }
+  ],
+  "papers": [
+    {
+      "input_json": "data/raw/papers/sample_papers.json"
+    }
+  ],
+  "datasets": [
+    {
+      "input_dir": "data/raw/datasets",
+      "manifest": "data/raw/datasets/manifest.json"
+    }
+  ],
+  "software_symbols": [
+    {
+      "repo_path": ".",
+      "language": "python",
+      "max_files": 500
+    }
+  ]
+}
